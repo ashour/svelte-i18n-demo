@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Ghostbusters",
+        "releaseDate": "1984-06-08",
+        "awardWinCount": 6,
+        "awardNominationCount": 8,
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/2f/Ghostbusters_%281984%29_theatrical_poster.png"
+    },
+    {
+        "id": 2,
+        "title": "Batman",
+        "releaseDate": "1989-06-23",
+        "awardWinCount": 9,
+        "awardNominationCount": 26,
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5a/Batman_%281989%29_theatrical_poster.jpg"
+    },
+    {
+        "id": 3,
+        "title": "The Karate Kid",
+        "releaseDate": "1984-06-22",
+        "awardWinCount": 2,
+        "awardNominationCount": 3,
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a9/Karate_kid.jpg"
+    },
+    {
+        "id": 4,
+        "title": "The Terminator",
+        "releaseDate": "1984-10-26",
+        "awardWinCount": 7,
+        "awardNominationCount": 6,
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/7/70/Terminator1984movieposter.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Back to the Future",
+        "releaseDate": "1985-07-03",
+        "awardWinCount": 20,
+        "awardNominationCount": 25,
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/d/d2/Back_to_the_Future.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Star Wars: Episode VI - Return of the Jedi",
+        "releaseDate": "1983-05-25",
+        "awardWinCount": 22,
+        "awardNominationCount": 20,
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b2/ReturnOfTheJediPoster1983.jpg"
+    }
+]

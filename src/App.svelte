@@ -1,6 +1,7 @@
 <script>
     import Header from './components/Header.svelte';
-    import Movie from './components/Movie.svelte';
+    import Footer from './components/Footer.svelte';
+    import MovieGrid from './components/MovieGrid.svelte';
 </script>
 
 <style>
@@ -12,5 +13,7 @@
 <Header />
 
 <main role="main">
-    <Movie />
+    <MovieGrid />
 </main>
+
+<Footer />

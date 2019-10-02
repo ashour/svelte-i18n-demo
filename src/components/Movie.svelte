@@ -1,13 +1,31 @@
+<script>
+    export let movie;
+
+    const {
+        title,
+        imageUrl: src,
+        awardWinCount,
+        awardNominationCount,
+        releaseDate: released,
+    } = movie;
+</script>
+
 <style>
     .box {
-        padding: 0 1rem;
         background-color: #f7f7f7;
+    }
+    @media screen and (min-width:769px) {
+        .box {
+            height: 11rem;
+        }
     }
 
     img {
+        display: block;
         border-radius: 0.25rem;
-        max-height: 12rem;
+        max-height: 100%;
         max-width: 100%;
+        object-fit: cover;
     }
 
     .movie-title {
@@ -28,20 +46,17 @@
 <div class="box">
     <div class="columns is-mobile">
         <div class="column is-one-quarter img-container">
-            <img
-                alt="Film poster"
-                src="https://upload.wikimedia.org/wikipedia/en/5/5a/Batman_%281989%29_theatrical_poster.jpg"
-            >
+            <img {src} alt="Poster for {title}">
         </div>
 
         <div class="column">
-            <h3 class="is-size-5 is-uppercase movie-title">Batman</h3>
+            <h3 class="is-size-5 is-uppercase movie-title">{title}</h3>
 
-            <p class="release-date">Released 1989</p>
+            <p class="release-date">Released {released}</p>
 
-            <p class="awards">Won 9 awards</p>
+            <p class="awards">Won {awardWinCount} awards</p>
 
-            <p class="nominations">Nominated for 26 awards</p>
+            <p class="nominations">Nominated for {awardNominationCount} awards</p>
         </div>
     </div>
 </div>
