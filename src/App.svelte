@@ -1,13 +1,11 @@
 <script>
-    import Header from './components/Header.svelte';
-    import Footer from './components/Footer.svelte';
-    import MovieGrid from './components/MovieGrid.svelte';
+    import Header from './components/Layout/Header.svelte';
+    import Footer from './components/Layout/Footer.svelte';
+    import MovieGrid from './components/Movies/MovieGrid.svelte';
 </script>
 
 <style>
-    main {
-        padding: 0 1rem;
-    }
+    main { padding: 0 1rem; }
 </style>
 
 <Header />
