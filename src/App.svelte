@@ -1,20 +1,28 @@
 <script>
-    import { setupI18n } from './services/i18n';
+    import { setupI18n, isLocaleLoaded, locale, dir } from './services/i18n';
     import Header from './components/Layout/Header.svelte';
     import Footer from './components/Layout/Footer.svelte';
     import MovieGrid from './components/Movies/MovieGrid.svelte';
 
-    setupI18n({ withLocale: 'en' });
+    $: if (!$isLocaleLoaded) {
+        setupI18n({ withLocale: 'en' });
+    }
+
+    $: { document.dir = $dir; }
 </script>
 
 <style>
     main { padding: 0 1rem; }
 </style>
 
-<Header />
+{#if $isLocaleLoaded}
+    <Header />
 
-<main role="main">
-    <MovieGrid />
-</main>
+    <main role="main">
+        <MovieGrid />
+    </main>
 
-<Footer />
+    <Footer />
+{:else}
+    <p>Loading...</p>
+{/if}
