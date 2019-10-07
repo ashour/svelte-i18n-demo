@@ -15,8 +15,8 @@ function setupI18n({ withLocale: _locale } = { withLocale: 'en' }) {
         });
 }
 
-const isLocaleLoaded = derived(locale, ($locale) => typeof $locale === 'string');
+const isLocaleLoaded = derived(locale, $locale => typeof $locale === 'string');
 
-const dir = derived(locale, ($locale) => $locale === 'ar' ? 'rtl' : 'ltr');
+const dir = derived(locale, $locale => $locale === 'ar' ? 'rtl' : 'ltr');
 
 export { _, locale, dir, setupI18n, isLocaleLoaded };
