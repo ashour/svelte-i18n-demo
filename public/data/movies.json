@@ -1,7 +1,8 @@
 [
     {
         "id": 1,
-        "title": "Ghostbusters",
+        "title_en": "Ghostbusters",
+        "title_ar": "جوستبسترس",
         "releaseDate": "1984-06-08",
         "awardWinCount": 6,
         "awardNominationCount": 8,
@@ -9,7 +10,8 @@
     },
     {
         "id": 2,
-        "title": "Batman",
+        "title_en": "Batman",
+        "title_ar": "الرجل الوطواط",
         "releaseDate": "1989-06-23",
         "awardWinCount": 9,
         "awardNominationCount": 26,
@@ -17,7 +19,8 @@
     },
     {
         "id": 3,
-        "title": "The Karate Kid",
+        "title_en": "The Karate Kid",
+        "title_ar": "طفل الكاراتيه",
         "releaseDate": "1984-06-22",
         "awardWinCount": 2,
         "awardNominationCount": 3,
@@ -25,7 +28,8 @@
     },
     {
         "id": 4,
-        "title": "The Terminator",
+        "title_en": "The Terminator",
+        "title_ar": "المُنهي",
         "releaseDate": "1984-10-26",
         "awardWinCount": 7,
         "awardNominationCount": 6,
@@ -33,7 +37,8 @@
     },
     {
         "id": 5,
-        "title": "Back to the Future",
+        "title_en": "Back to the Future",
+        "title_ar": "العودة إلى المستقبل",
         "releaseDate": "1985-07-03",
         "awardWinCount": 20,
         "awardNominationCount": 25,
@@ -41,7 +46,8 @@
     },
     {
         "id": 6,
-        "title": "Star Wars: Episode VI - Return of the Jedi",
+        "title_en": "Star Wars: Episode VI - Return of the Jedi",
+        "title_ar": "حرب النجوم: الحلقة السادسة - عودة الچيداي",
         "releaseDate": "1983-05-25",
         "awardWinCount": 22,
         "awardNominationCount": 20,

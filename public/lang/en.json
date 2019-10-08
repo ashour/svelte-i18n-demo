@@ -2,5 +2,14 @@
     "app": {
         "title": "Filmic",
         "subtitle": "A curated collection of eighties movies"
+    },
+    "movie": {
+        "won_awards": "Won {n, plural, =0 {no awards} one {# award} other {# awards}}",
+        "nominated_for_awards": "Nominated for {n, plural, =0 {no awards} one {# award} other {# awards}}",
+        "released_at": "Released {date}"
+    },
+    "footer": {
+        "line1": "Companion to a <a href=\"{phraseUrl}\">Phrase blog</a> article.",
+        "line2": "Made with <a href=\"{svelteUrl}\">Svelte</a> &amp; <a href=\"{bulmaUrl}\">Bulma</a>."
     }
 }

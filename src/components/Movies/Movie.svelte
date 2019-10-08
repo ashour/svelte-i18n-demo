@@ -1,13 +1,16 @@
 <script>
+    import { _, locale, formatDate } from '../../services/i18n';
+
     export let movie;
 
     const {
-        title,
         imageUrl: src,
         awardWinCount,
-        awardNominationCount,
+        awardNominationCount: nominationCount,
         releaseDate: released,
     } = movie;
+
+    $: title = movie[`title_${$locale}`];
 </script>
 
 <style>
@@ -52,11 +55,17 @@
         <div class="column">
             <h3 class="is-size-5 is-uppercase movie-title">{title}</h3>
 
-            <p class="release-date">Released {released}</p>
+            <p class="release-date">
+                {$_('movie.released_at', { date: formatDate(released, { year: 'numeric' }) })}
+            </p>
 
-            <p class="awards">Won {awardWinCount} awards</p>
+            <p class="awards">
+                {$_('movie.won_awards', { n: awardWinCount })}
+            </p>
 
-            <p class="nominations">Nominated for {awardNominationCount} awards</p>
+            <p class="nominations">
+                {$_('movie.nominated_for_awards', { n: nominationCount })}
+            </p>
         </div>
     </div>
 </div>
