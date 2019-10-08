@@ -1,4 +1,4 @@
-# Starter Project for svelte-i18n Demo
+# Demo svelte-i18n App
 This repo and app are companions to a [PhraseApp blog](https://phrase.com/blog) article.
 
 ## Installation
